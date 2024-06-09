@@ -5,14 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #2e2f42;
+        background-color: #fff;
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 440px;
+      }
+      #categories {
+        margin: 24px;
+      }
+      .item {
+        background-color: #f6f6fe;
+        margin-bottom: 24px;
+        padding: 16px;
+      }
+      .item-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
+      }
+      .item > ul > li {
+        border: 1px solid #808080;
+        border-radius: 4px;
+        width: 360px;
+        height: 40px;
+        align-items: center;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin: 8px;
+      }
+    </style>
     <p><a href="./index.html">Go back</a></p>
 
-    <ul id="categories">
+    <ul id="categories" class="container">
       <li class="item">
-        <h2>Animals</h2>
+        <h2 class="item-title">Animals</h2>
 
         <ul>
           <li>Cat</li>
@@ -22,7 +96,7 @@
         </ul>
       </li>
       <li class="item">
-        <h2>Products</h2>
+        <h2 class="item-title">Products</h2>
 
         <ul>
           <li>Bread</li>
@@ -31,7 +105,7 @@
         </ul>
       </li>
       <li class="item">
-        <h2>Technologies</h2>
+        <h2 class="item-title">Technologies</h2>
 
         <ul>
           <li>HTML</li>
